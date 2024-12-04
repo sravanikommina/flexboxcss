@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox5</title>
+    <style>
+        .main{
+            margin-left: 5px;
+            border: solid black 1px;
+            
+            width: 1460px;
+            display: flex;
+            font-family: sans-serif;
+        }
+        .content{
+            width: 50%;
+            border: none;
+            display: flex;
+            height: auto;
+        }
+        .nav2 button{
+          border: solid 1px rgb(220, 215, 215);
+          background-color: white;
+        }
+        .nav{
+            height: 68.87px;
+            width: 321.81px; 
+            position: absolute;
+            top: 63.69px;
+            left:398.46px;
+        }
+        .img{
+            float: right;
+            height: 1000px;
+            width: 696px;
+            object-fit: fill;
+        }
+        
+        .logo{
+            width: 168.31px;
+            height: 81.11px;
+            position: absolute;
+            top: 50.69px;
+            left: 101.39px;
+        }
+        a,button{
+            margin-right: 10px;
+            
+        }
+        a:visited{
+          color: rgba(63, 61, 61, 0.152);
+        }
+        .header-title{
+            Height:118.08px;
+            width: 438px;
+            position: absolute;
+            top: 180.06px;
+            left: 101.39px;
+        }
+        p{
+            top: 65px;
+            
+            position: absolute;
+        }
+        .booking-buttons{
+            height: 44.61px;
+            width: 603.22px;
+            position: absolute;
+            top: 350px;
+            left: 101.39px;
+            justify-content: space-between;
+        }
+        .choose-container{
+          display: flex;
+          gap: 20.28px;
+        }
+        .choose-container button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            padding: 0 10px;
+            font-size: 17px;
+            font-weight: lighter;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .choose-container .selected{
+            /* border-color:#213D77 ; */
+          background-color: #213D77;
+          color: white;
+        }
+        .journey-date-container{
+            display: flex;
+            position: absolute;
+            top: 561px;
+            left: 100px;
+        }
+        .journey-detail-container{
+          display: flex;
+            position: absolute;
+            top: 414px;
+            left: 100px;
+        }
+        .journey-details-section{
+            display:flex;
+            justify-content: space-evenly;
+            /* background-color :aliceblue; */
+            border:grey;
+            border-radius:6px;
+            width: 618px;
+        }
+        .dropdown{
+            display: flex;
+            align-items: center;
+            color:gray;
+        }
+        .search-button{
+            justify-content: center;
+            gap: 15px;
+            font-weight: 700;
+            background-color: #01BB0A;
+            padding: 25px;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: absolute;
+            top: 742px;
+            left: 100px;
+            width: 618px;
+          }
+        
+        .journey-details-section{
+            border-radius: 5px;
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px solid lightgray;
+           
+        }
+        .card-element-image-container img{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .card-element{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="home content">
+            
+            <div class="logo">
+                <img src="../flexbox/assets/image 6 (1).png" alt="">
+                <img src="../flexbox/assets/image 5.png" alt="">
+            </div>
+            <div class="nav">
+                <div style="margin:10px; padding: 3px"   class="nav1">
+                    <a href="#">Ask Disha</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Alerts</a>
+                </div>
+                <div class="nav2">
+                    <button style="background-color: orangered; color: white;">Login</button>
+                    <button>Register</button>
+                    <button>Agent Login</button>
+                </div>
+                
+            </div>
+            <div class="header-title">
+                <h1 style="font-size: 40px;">Indian Railways</h1>
+                <p>
+                    <span style="color: rgb(10, 222, 10); font-size: 25px;">Safety</span>
+                    <span style="color: coral;font-size: 25px;">Security</span>
+                    <span style="color: rgb(4, 49, 101);font-size: 25px;">Punctuality</span>
+                </p>
+            </div>
+            <div class="booking-buttons">
+                <button style="background-color: rgb(34, 34, 73); color: whitesmoke;height: 34.61px; width: 178px;" class="selected">
+                    <img src="assets/bookingvector.png" width="14.33" height="10.33" style="margin-right: 10px;" alt="">BOOK Ticket
+                </button>
+                <button style="height: 34.61px;width: 164px; gap: 10px;"><img src="../flexbox/assets/Vector.png" style="margin: inherit;" alt="">PNR Status</button>
+                <button style="height: 34.61px;width: 218px;"><img src="assets/chart vector.png" height="15.33;" style="margin: inherit;" alt="">Charts/Vacancy</button>
+            </div>
+            
+        </div> 
+        <div class="journey-detail-container">
+            <div class="journey-details-section">
+              <div class="card-element">
+                <div class="card-element-image-container">
+                  <img src="../flexbox/assets/ic-search-from-desktop.png" alt="" />
+                </div>
+                <div class="select-option">
+                  <div class="dropdown">
+                    <span>From</span>
+                    <img src="assets/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt="" />
+                  </div>
+                  <div class="choose-location">
+                    <h2>Banglore</h2>
+                    <span>KSR-Banglore</span>
+                  </div>
+                </div>
+              </div>
+              <div class="to-from">
+                <img
+                  src="assets/sync_alt_FILL0_wght300_GRAD0_opsz48 1.png"
+                  style="color: black"
+                  alt=""
+                />
+              </div>
+              <div class="card-element">
+                <div class="card-element-image-container">
+                  <img src="assets/ic-search-to-desktop.png" alt="" />
+                </div>
+                <div class="select-option">
+                  <div class="dropdown">
+                    <span>To</span>
+                    <img src="assets/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt="" />
+                  </div>
+                  <div class="choose-option">
+                    <h2>Kasarogod</h2>
+                    <span>KSD-Kasarogod</span>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+            
+            <div class="journey-date-container">
+              <div class="journey-details-section">
+              <div class="card-element">
+                <div class="card-element-image-container">
+                  <img src="assets/ic-search-calender-desktop.png" alt="" />
+                </div>
+                <div class="select-option">
+                
+                  <div class="dropdown">
+                    <span>Date</span>
+                    <img src="assets/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt="" />
+                  </div>
+                  <div class="choose-location">
+                    <h2>01 Aug 23</h2>
+                    <span>Tuesday</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-element">
+                <div class="card-element-image-container">
+                  <img src="assets/group_work_FILL0_wght200_GRAD0_opsz48 1.png" alt="" />
+                </div>
+                <div class="select-option">
+                  <div class="dropdown">
+                    <span>Class</span>
+                    <img src="assets/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt="" />
+                  </div>
+                  <div class="choose-location">
+                    <h2>3A</h2>
+                    <span>AC 3 tier</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-element">
+                <div class="card-element-image-container">
+                  <img src="assets/widgets_FILL0_wght200_GRAD0_opsz48 1.png" alt="" />
+                </div>
+                <div class="select-option">
+                  <div class="dropdown">
+                    <span>Seat Type</span>
+                    <img src="assets/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt="" />
+                  </div>
+                  <div class="choose-location">
+                    <h2>TATKAL</h2>
+                    <span>AC 3 Tier</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="search-button">Search Train <img src="assets/right-arrow-
+            icon.png" alt=""></button>
+        <div class="right-container">
+           <img src="../flexbox/assets/Rectangle 11.png" alt="" height="1000px">
+        </div>  
+    </div>
+     
+</body>
+</html>
