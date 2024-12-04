@@ -1,0 +1,18 @@
+1. justify-content:
+Purpose: Determines how the content is distributed along the main axis (horizontally if flex-direction is row, 
+vertically if flex-direction is column).
+Values: flex-start, flex-end, center, space-between, space-around, space-evenly.
+2. align-items:
+Purpose: Defines how flex items are aligned along the cross-axis (perpendicular to the main axis).
+Values: flex-start, flex-end, center, baseline, stretch.
+3. align-self:
+Purpose: Overrides align-items for a specific flex item, allowing individual items to have different
+ alignment from the rest.
+Values: Same as align-items.
+4. flex-direction:
+Purpose: Specifies the direction of the main axis.
+Values: row (default), row-reverse, column, column-reverse.
+5. flex-wrap:
+Purpose: Defines whether the flex items are forced into a single line or can be wrapped onto multiple 
+lines.
+Values: nowrap (default), wrap, wrap-revers
